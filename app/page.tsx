@@ -149,7 +149,7 @@ export default function Home() {
         <div className="why-visual">
           <figure>
             <img src="/images/process/childhood-why-scene.png" alt="밝은 작업실에서 아이가 그림을 그리고 주변에 어린 시절의 다채로운 그림들이 풍성하게 펼쳐진 모습" />
-            <figcaption><span>모든 그림에는 한 시절이 담겨 있습니다</span><span>유년의 기록 · 01</span></figcaption>
+            <figcaption><span>유년의 기록 · 01</span></figcaption>
           </figure>
           <div className="why-copy">
             <p className="why-lead">
