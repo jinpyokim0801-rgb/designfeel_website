@@ -108,6 +108,12 @@ p, h1, h2, h3, a, button, label, figcaption, .section-label, .eyebrow {
   max-width: 1100px; font-family: "EB Garamond", "Noto Serif KR", "AppleMyungjo", "Batang", serif;
   font-size: clamp(3.5rem, 6.1vw, 7rem); line-height: 1.08; letter-spacing: -.055em; font-weight: 400;
 }
+
+/* Keep the philosophy heading comfortably left-aligned on laptop-width screens. */
+@media (min-width: 961px) and (max-width: 1440px) {
+  .why-heading { grid-template-columns: 1fr; gap: 12px; }
+  .why-kicker { padding-top: 0; }
+}
 .why-visual { position: relative; }
 .why-visual figure { width: 78%; }
 .why-visual figure img { aspect-ratio: 16 / 9; object-fit: cover; }

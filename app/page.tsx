@@ -168,10 +168,6 @@ export default function Home() {
         <div className="section-label">02 — Design Feel Archive</div>
         <div className="intro-heading">
           <h2>The living<br />archive.</h2>
-          <p>
-            한 아이의 시각 언어가 쌓여<br />
-            한 가족의 역사가 됩니다.
-          </p>
         </div>
         <div className="intro-grid">
           <figure>
