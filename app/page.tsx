@@ -176,7 +176,6 @@ export default function Home() {
         <div className="intro-grid">
           <figure>
             <img src="/images/process/living-archive-v1.png" alt="여러 시기의 아이 그림과 아카이브 북, 디지털 기록, 작품 증서가 체계적으로 보존된 프라이빗 가족 아카이브" />
-            <figcaption>시간과 함께 깊어지는 한 가족의 살아 있는 컬렉션.</figcaption>
           </figure>
           <div className="intro-copy">
             <p>
