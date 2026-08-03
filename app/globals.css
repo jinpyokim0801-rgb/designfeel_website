@@ -272,7 +272,7 @@ footer h2 { margin-top: 9vh; font-family: "EB Garamond", Georgia, serif; font-si
   .why-visual figure { width: 100%; }
   .why-visual figure img { aspect-ratio: 4 / 5; }
   .why-visual figcaption span:last-child { display: none; }
-  .why-copy { width: calc(100% - 7vw); margin: -30px 0 0 auto; padding: 30px 24px 8px; }
+  .why-copy { width: calc(100% - 7vw); margin: 24px 0 0 auto; padding: 30px 24px 8px; }
   .why-copy p { font-size: .9rem; line-height: 1.7; }
   .why-copy .why-lead { font-size: 1.24rem; line-height: 1.5; }
   .intro-heading, .collection-intro, .archive-lead { margin: 55px 0 70px; grid-template-columns: 1fr; }
