@@ -311,31 +311,6 @@ export default function Home() {
         </form>
       </section>
 
-      <section className="archive" id="archive">
-        <div className="section-label">06 — Archive package</div>
-        <div className="archive-lead">
-          <h2>Your private<br />family archive.</h2>
-          <p>완성 작품과 작품 소장권, 작품 이력, 제작 기록, 원본 스캔 파일을 한 가족만의 프라이빗 아카이브로 보존합니다.</p>
-        </div>
-        <div className="archive-images">
-          <figure className="wide">
-            <img src="/images/process/private-ownership-v3.png" alt="완성 작품과 상세 정보가 적힌 작품 소장권, 작가의 자필 편지, QR 아카이브 카드를 함께 보존 포장하는 모습" />
-            <figcaption>01 · 작품 소장권, 작가의 편지와 프라이빗 아카이브</figcaption>
-          </figure>
-          <figure>
-            <img src="/images/process/private-scan-v2.png" alt="아이의 원본 그림을 디지털 이미지로 보존하는 모습" />
-            <figcaption>02 · 원본 스캔과 디지털 보존 기록</figcaption>
-          </figure>
-          <div className="package-list">
-            <p><span>01</span> 원본 작품과 작품 소장권</p>
-            <p><span>02</span> 원본 스캔 이미지 파일</p>
-            <p><span>03</span> 작품 정보와 제작 이력</p>
-            <p><span>04</span> 제작 기록과 작가의 자필 편지</p>
-            <p><span>05</span> 프라이빗 QR 아카이브 카드</p>
-          </div>
-        </div>
-      </section>
-
       <footer id="contact">
         <div className="footer-top">
           <p>Private commissions · By appointment</p>
