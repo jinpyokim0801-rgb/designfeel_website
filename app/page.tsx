@@ -248,13 +248,12 @@ export default function Home() {
         </div>
         <div className="deliverables-grid">
           <article><span>01</span><h3>Original artwork</h3><p>아이의 그림과 작가의 회화가 결합된 세상에 단 하나뿐인 실물 작품 1점</p></article>
-          <article><span>02</span><h3>Premium wood frame</h3><p>작품의 크기와 색, 설치 공간을 고려해 완성한 맞춤 원목 액자</p></article>
-          <article><span>03</span><h3>Certificate of ownership</h3><p>작품 번호와 제목, 재료, 제작 연도, 작가의 서명과 압인이 기록된 실물 소장권</p></article>
-          <article><span>04</span><h3>Original scans</h3><p>작품 제작 전 보존한 아이 그림의 고해상도 디지털 원본 파일</p></article>
-          <article><span>05</span><h3>Digital archive</h3><p>완성 작품과 세부 이미지, 가족 소장용 고화질 디지털 기록 파일</p></article>
-          <article><span>06</span><h3>Process documentation</h3><p>선별과 구성, 콜라주와 회화가 완성되는 과정을 담은 기록</p></article>
-          <article><span>07</span><h3>Artist letter & QR card</h3><p>작품에 담긴 이야기를 적은 작가의 편지와 기록을 열람하는 프라이빗 아카이브 카드</p></article>
-          <article><span>08</span><h3>Archival packaging</h3><p>작품과 모든 기록물을 안전하게 전달하고 보관하기 위한 전용 포장</p></article>
+          <article><span>02</span><h3>Certificate of ownership</h3><p>작품 번호와 제목, 재료, 제작 연도, 작가의 서명과 압인이 기록된 실물 소장권</p></article>
+          <article><span>03</span><h3>Original scans</h3><p>작품 제작 전 보존한 아이 그림의 고해상도 디지털 원본 파일</p></article>
+          <article><span>04</span><h3>Digital archive</h3><p>완성 작품과 세부 이미지, 가족 소장용 고화질 디지털 기록 파일</p></article>
+          <article><span>05</span><h3>Process documentation</h3><p>선별과 구성, 콜라주와 회화가 완성되는 과정을 담은 기록</p></article>
+          <article><span>06</span><h3>Artist letter & QR card</h3><p>작품에 담긴 이야기를 적은 작가의 편지와 기록을 열람하는 프라이빗 아카이브 카드</p></article>
+          <article><span>07</span><h3>Archival packaging</h3><p>작품과 모든 기록물을 안전하게 전달하고 보관하기 위한 전용 포장</p></article>
         </div>
       </section>
 
