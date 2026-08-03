@@ -251,7 +251,8 @@ footer h2 { margin-top: 9vh; font-family: "EB Garamond", Georgia, serif; font-si
 .footer-mail span { font-family: inherit; }
 .footer-bottom { margin-top: auto; display: flex; justify-content: space-between; padding-top: 55px; font-size: .72rem; }
 
-@media (max-width: 820px) {
+/* Switch to the single-column layout before the desktop columns become cramped. */
+@media (max-width: 960px) {
   .site-header { height: 76px; }
   .brand { width: 150px; }
   .menu-button { display: block; margin-left: auto; }
@@ -304,7 +305,7 @@ footer h2 { margin-top: 9vh; font-family: "EB Garamond", Georgia, serif; font-si
   .footer-bottom { gap: 18px; flex-wrap: wrap; }
 }
 
-@media (max-width: 820px) and (max-height: 700px) {
+@media (max-width: 960px) and (max-height: 700px) {
   .process-stage { grid-template-rows: 64% 36%; }
   .step-count strong { font-size: 3rem; }
   .step-info { top: 32%; }
