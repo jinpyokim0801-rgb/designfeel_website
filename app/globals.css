@@ -53,11 +53,11 @@ button { font: inherit; }
   border: 0;
   background: transparent;
   cursor: pointer;
-  overflow: hidden;
 }
 .entry-image-button img {
   aspect-ratio: 16 / 9;
   object-fit: cover;
+  transform-origin: center;
   transform: scale(1);
   transition: transform .45s cubic-bezier(.2,.7,.2,1);
 }
