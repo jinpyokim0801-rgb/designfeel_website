@@ -96,6 +96,17 @@ p, h1, h2, h3, a, button, label, figcaption, .section-label, .eyebrow {
 }
 .hero-index i { height: 1px; background: var(--gray); min-width: 90px; }
 
+/* Keep the hero details on two fixed edges before the six-column layout gets cramped. */
+@media (max-width: 1400px) {
+  .hero-index {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    column-gap: 8vw;
+    row-gap: 16px;
+  }
+  .hero-index i { display: none; }
+  .hero-index span:nth-of-type(even) { justify-self: end; text-align: right; }
+}
+
 .why, .intro, .deliverables, .collection, .archive { padding: 150px 3vw 180px; }
 .section-label { border-top: 1px solid var(--gray); padding-top: 15px; color: var(--gray-dark); font-size: .8rem; font-weight: 400; letter-spacing: .035em; }
 .why { background: #f8f8f8; }
@@ -269,7 +280,7 @@ footer h2 { margin-top: 9vh; font-family: "EB Garamond", Georgia, serif; font-si
   .hero h1 { margin-top: 54px; font-size: 17vw; }
   .hero-description { margin-top: 54px; }
   .hero-image { height: 58svh; min-height: 420px; margin-top: 56px; }
-  .hero-index { grid-column: 1; grid-template-columns: 1fr auto; row-gap: 12px; }
+  .hero-index { grid-column: 1; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); row-gap: 12px; }
   .hero-index i { display: none; }
   .why, .intro, .deliverables, .collection, .archive { padding-top: 90px; padding-bottom: 110px; }
   .why-heading { margin: 54px 0 48px; grid-template-columns: 1fr; gap: 22px; }
