@@ -40,6 +40,31 @@ img { width: 100%; display: block; }
 figure, p, h1, h2, h3 { margin: 0; }
 button { font: inherit; }
 
+.entry-screen {
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+  padding: 5vw;
+  background: var(--white);
+}
+.entry-image-button {
+  width: min(33vw, 520px);
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  overflow: hidden;
+}
+.entry-image-button img {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  transform: scale(1);
+  transition: transform .45s cubic-bezier(.2,.7,.2,1);
+}
+.entry-image-button:hover img,
+.entry-image-button:focus-visible img { transform: scale(1.045); }
+.entry-image-button:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
+
 /* Keep Korean words together so a line does not begin with only one or two characters. */
 p, h1, h2, h3, a, button, label, figcaption, .section-label, .eyebrow {
   word-break: keep-all;
@@ -270,6 +295,7 @@ footer h2 { margin-top: 9vh; font-family: "EB Garamond", Georgia, serif; font-si
 
 /* Switch to the single-column layout before the desktop columns become cramped. */
 @media (max-width: 960px) {
+  .entry-image-button { width: min(70vw, 420px); }
   .site-header { height: 76px; }
   .brand { width: 150px; }
   .menu-button { display: block; margin-left: auto; }

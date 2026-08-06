@@ -51,6 +51,7 @@ export default function Home() {
   const processRef = useRef<HTMLElement>(null);
   const [activeStep, setActiveStep] = useState(0);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [hasEntered, setHasEntered] = useState(false);
 
   const sendApplication = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -90,6 +91,21 @@ export default function Home() {
       window.removeEventListener("resize", update);
     };
   }, []);
+
+  if (!hasEntered) {
+    return (
+      <main className="entry-screen">
+        <button
+          className="entry-image-button"
+          type="button"
+          onClick={() => setHasEntered(true)}
+          aria-label="Design Feel 홈페이지로 들어가기"
+        >
+          <img src="/images/entry-photo.jpeg" alt="꽃이 핀 숲에서 아이와 보호자가 함께 있는 모습" />
+        </button>
+      </main>
+    );
+  }
 
   return (
     <main>
@@ -132,7 +148,6 @@ export default function Home() {
         </div>
         <figure className="hero-image">
           <img src="/images/process/private-finished-selected.png" alt="아이들의 그림과 작가의 회화가 어우러진 Design Feel 완성 작품" />
-          <figcaption><span>프라이빗 커미션 · 작품 세부</span><span>단 하나의 작품</span></figcaption>
         </figure>
         <div className="hero-index">
           <span>예약제로 진행되는 작품</span>
