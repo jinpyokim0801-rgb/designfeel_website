@@ -90,7 +90,7 @@ p, h1, h2, h3, a, button, label, figcaption, .section-label, .eyebrow {
 
 .hero {
   min-height: 100svh; padding: 146px 3vw 38px;
-  display: grid; grid-template-columns: minmax(0, 1.16fr) minmax(0, .84fr); grid-template-rows: 1fr auto; column-gap: 6vw;
+  display: grid; grid-template-columns: minmax(0, 1.16fr) minmax(0, .84fr); column-gap: 6vw;
 }
 .hero-copy { display: flex; flex-direction: column; align-items: flex-start; padding: 8px 0 40px; }
 .eyebrow { color: var(--gray-dark); font-size: .8rem; font-weight: 400; letter-spacing: .035em; }
@@ -115,23 +115,6 @@ p, h1, h2, h3, a, button, label, figcaption, .section-label, .eyebrow {
   display: flex; justify-content: space-between; background: rgba(255,255,255,.92);
   font-size: .72rem; font-weight: 400;
 }
-.hero-index {
-  grid-column: 1 / -1; display: grid; grid-template-columns: 1fr auto 1fr auto 1fr auto;
-  align-items: center; gap: 28px; padding-top: 22px; color: var(--gray-dark); font-size: .76rem;
-}
-.hero-index i { height: 1px; background: var(--gray); min-width: 90px; }
-
-/* Keep the hero details on two fixed edges before the six-column layout gets cramped. */
-@media (max-width: 1400px) {
-  .hero-index {
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-    column-gap: 8vw;
-    row-gap: 16px;
-  }
-  .hero-index i { display: none; }
-  .hero-index span:nth-of-type(even) { justify-self: end; text-align: right; }
-}
-
 .why, .intro, .deliverables, .collection, .archive { padding: 150px 3vw 180px; }
 .section-label { border-top: 1px solid var(--gray); padding-top: 15px; color: var(--gray-dark); font-size: .8rem; font-weight: 400; letter-spacing: .035em; }
 .why { background: #f8f8f8; }
@@ -154,7 +137,6 @@ p, h1, h2, h3, a, button, label, figcaption, .section-label, .eyebrow {
   .why, .intro, .deliverables, .collection, .archive { padding-top: 112px; padding-bottom: 124px; }
   .why-heading { margin: 64px 0 60px; }
   .intro-heading, .collection-intro, .archive-lead { margin: 68px 0 76px; }
-  .private-notes { margin-top: 82px; }
   .deliverables-lead { margin: 68px 0 72px; }
   .application-intro { margin-bottom: 64px; }
 }
@@ -184,14 +166,6 @@ figcaption { margin-top: 11px; color: var(--gray-dark); font-size: .72rem; font-
 .intro-copy > p { margin-bottom: 26px; color: var(--gray-dark); font-size: 1.02rem; line-height: 1.95; letter-spacing: .005em; }
 .intro-copy a { margin-top: 26px; padding: 17px 0; border-top: 1px solid; border-bottom: 1px solid; display: flex; justify-content: space-between; font-size: .9rem; }
 .intro-copy a span { font-size: 1.15rem; line-height: .8; }
-.private-notes { margin-top: 120px; display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--black); }
-.private-notes article { min-height: 190px; padding: 18px 2vw 24px 0; border-right: 1px solid var(--line); }
-.private-notes article + article { padding-left: 2vw; }
-.private-notes article:last-child { border-right: 0; }
-.private-notes span { color: var(--accent); font-size: .75rem; font-weight: 400; }
-.private-notes h3 { margin-top: 44px; font-size: 1.3rem; font-weight: 400; letter-spacing: -.005em; }
-.private-notes p { margin-top: 12px; max-width: 300px; color: var(--gray-dark); font-size: .88rem; line-height: 1.8; }
-
 .pinned-process { height: 660svh; background: var(--black); color: white; }
 .process-sticky { position: sticky; top: 0; height: 100svh; padding: 28px 3vw; overflow: hidden; }
 .process-header { height: 48px; display: flex; justify-content: space-between; border-bottom: 1px solid #555; font-size: .75rem; letter-spacing: .035em; }
@@ -314,8 +288,6 @@ footer h2 { margin-top: 9vh; font-family: "EB Garamond", Georgia, serif; font-si
   .hero h1 { margin-top: 54px; font-size: 17vw; }
   .hero-description { margin-top: 54px; }
   .hero-image { height: 58svh; min-height: 420px; margin-top: 56px; }
-  .hero-index { grid-column: 1; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); row-gap: 12px; }
-  .hero-index i { display: none; }
   .why, .intro, .deliverables, .collection, .archive { padding-top: 90px; padding-bottom: 110px; }
   .why-heading { margin: 54px 0 48px; grid-template-columns: 1fr; gap: 22px; }
   .why-kicker { padding-top: 0; }
@@ -333,10 +305,6 @@ footer h2 { margin-top: 9vh; font-family: "EB Garamond", Georgia, serif; font-si
   .deliverables-grid { grid-template-columns: 1fr; }
   .deliverables-grid article { min-height: 180px; grid-template-columns: 44px 1fr; }
   .intro-grid { grid-template-columns: 1fr; }
-  .private-notes { margin-top: 78px; grid-template-columns: 1fr; }
-  .private-notes article { min-height: 155px; padding: 18px 0 24px; border-right: 0; border-bottom: 1px solid var(--line); }
-  .private-notes article + article { padding-left: 0; }
-  .private-notes h3 { margin-top: 28px; }
   .process-stage { grid-template-columns: 1fr; grid-template-rows: 58% 42%; gap: 0; }
   .process-copy { min-height: 0; padding: 18px 0 20px; }
   .step-count strong { font-size: 3.5rem; }

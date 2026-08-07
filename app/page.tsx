@@ -149,10 +149,6 @@ export default function Home() {
         <figure className="hero-image">
           <img src="/images/process/private-finished-selected.png" alt="아이들의 그림과 작가의 회화가 어우러진 Design Feel 완성 작품" />
         </figure>
-        <div className="hero-index">
-          <span>예약제로 진행되는 작품</span>
-          <span>한 가족</span><i /><span>하나의 이야기</span><i /><span>단 하나의 작품</span>
-        </div>
       </section>
 
       <section className="why" id="about">
@@ -204,11 +200,6 @@ export default function Home() {
             </p>
             <a href="#process">아카이브가 만들어지는 과정 <span aria-hidden="true">→</span></a>
           </div>
-        </div>
-        <div className="private-notes">
-          <article><span>01</span><h3>One child</h3><p>한 아이만의 선과 색, 반복되는 형태와 이야기를 읽습니다.</p></article>
-          <article><span>02</span><h3>Many years</h3><p>서로 다른 시기의 그림과 기록을 시간의 흐름 안에서 연결합니다.</p></article>
-          <article><span>03</span><h3>One archive</h3><p>작품·원본 파일·제작 기록을 하나의 프라이빗 가족 컬렉션으로 남깁니다.</p></article>
         </div>
       </section>
 
