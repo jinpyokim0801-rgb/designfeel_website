@@ -32,6 +32,7 @@ body {
   color: var(--black);
   font-family: "EB Garamond", "Noto Serif KR", "AppleMyungjo", "Batang", serif;
   font-weight: 400;
+  letter-spacing: .01em;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
 }
@@ -96,9 +97,9 @@ p, h1, h2, h3, a, button, label, figcaption, .section-label, .eyebrow {
 .hero h1 {
   margin-top: 7vh; font-size: clamp(4.5rem, 7.7vw, 8.8rem); line-height: .84;
   font-family: "EB Garamond", Georgia, serif;
-  letter-spacing: -.065em; font-weight: 400;
+  letter-spacing: -.04em; font-weight: 400;
 }
-.hero-description { margin-top: auto; max-width: 420px; color: var(--gray-dark); font-size: clamp(1.08rem, 1.45vw, 1.45rem); line-height: 1.65; letter-spacing: -.025em; }
+.hero-description { margin-top: auto; max-width: 420px; color: var(--gray-dark); font-size: clamp(1.08rem, 1.45vw, 1.45rem); line-height: 1.65; letter-spacing: .005em; }
 .primary-button {
   margin-top: 26px; min-width: 270px; height: 56px; padding: 0 18px;
   display: flex; align-items: center; justify-content: space-between;
@@ -141,7 +142,7 @@ p, h1, h2, h3, a, button, label, figcaption, .section-label, .eyebrow {
 .why-kicker { padding-top: 12px; color: var(--accent); font-size: .86rem; font-weight: 400; letter-spacing: .02em; }
 .why-heading h2 {
   max-width: 1100px; font-family: "EB Garamond", "Noto Serif KR", "AppleMyungjo", "Batang", serif;
-  font-size: clamp(3.5rem, 6.1vw, 7rem); line-height: 1.08; letter-spacing: -.055em; font-weight: 400;
+  font-size: clamp(3.5rem, 6.1vw, 7rem); line-height: 1.08; letter-spacing: -.03em; font-weight: 400;
 }
 
 /* Keep the philosophy heading comfortably left-aligned on laptop-width screens. */
@@ -157,22 +158,22 @@ p, h1, h2, h3, a, button, label, figcaption, .section-label, .eyebrow {
   position: relative; width: 43%; margin: -7vw 0 0 auto; padding: clamp(28px, 4vw, 62px);
   background: var(--white); border-top: 5px solid var(--accent);
 }
-.why-copy p { margin-bottom: 24px; color: var(--gray-dark); font-size: 1rem; line-height: 1.95; letter-spacing: -.018em; }
+.why-copy p { margin-bottom: 24px; color: var(--gray-dark); font-size: 1rem; line-height: 1.95; letter-spacing: .005em; }
 .why-copy p:last-child { margin-bottom: 0; }
-.why-copy .why-lead { color: var(--black); font-size: clamp(1.25rem, 1.8vw, 1.78rem); line-height: 1.65; letter-spacing: -.035em; }
+.why-copy .why-lead { color: var(--black); font-size: clamp(1.25rem, 1.8vw, 1.78rem); line-height: 1.65; letter-spacing: -.01em; }
 .intro-heading, .collection-intro, .archive-lead {
   margin: 92px 0 110px; display: grid; grid-template-columns: 2fr 1fr; align-items: end; gap: 8vw;
 }
 .intro-heading h2, .collection-intro h2, .archive-lead h2 {
   font-family: "EB Garamond", Georgia, serif;
-  font-size: clamp(4rem, 7.4vw, 8.5rem); line-height: .86; letter-spacing: -.06em; font-weight: 400;
+  font-size: clamp(4rem, 7.4vw, 8.5rem); line-height: .86; letter-spacing: -.035em; font-weight: 400;
 }
-.intro-heading p, .collection-intro p, .archive-lead p { color: var(--gray-dark); font-size: 1.15rem; line-height: 1.8; letter-spacing: -.02em; }
+.intro-heading p, .collection-intro p, .archive-lead p { color: var(--gray-dark); font-size: 1.15rem; line-height: 1.8; letter-spacing: .005em; }
 .intro-grid { display: grid; grid-template-columns: 64% 1fr; gap: 7vw; align-items: end; }
 .intro-grid figure img { aspect-ratio: 4 / 2.8; object-fit: cover; }
 figcaption { margin-top: 11px; color: var(--gray-dark); font-size: .72rem; font-weight: 400; letter-spacing: .025em; }
 .intro-copy { padding-bottom: 20px; }
-.intro-copy > p { margin-bottom: 26px; color: var(--gray-dark); font-size: 1.02rem; line-height: 1.95; letter-spacing: -.018em; }
+.intro-copy > p { margin-bottom: 26px; color: var(--gray-dark); font-size: 1.02rem; line-height: 1.95; letter-spacing: .005em; }
 .intro-copy a { margin-top: 26px; padding: 17px 0; border-top: 1px solid; border-bottom: 1px solid; display: flex; justify-content: space-between; font-size: .9rem; }
 .intro-copy a span { font-size: 1.15rem; line-height: .8; }
 .private-notes { margin-top: 120px; display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--black); }
@@ -180,7 +181,7 @@ figcaption { margin-top: 11px; color: var(--gray-dark); font-size: .72rem; font-
 .private-notes article + article { padding-left: 2vw; }
 .private-notes article:last-child { border-right: 0; }
 .private-notes span { color: var(--accent); font-size: .75rem; font-weight: 400; }
-.private-notes h3 { margin-top: 44px; font-size: 1.3rem; font-weight: 400; letter-spacing: -.025em; }
+.private-notes h3 { margin-top: 44px; font-size: 1.3rem; font-weight: 400; letter-spacing: -.005em; }
 .private-notes p { margin-top: 12px; max-width: 300px; color: var(--gray-dark); font-size: .88rem; line-height: 1.8; }
 
 .pinned-process { height: 660svh; background: var(--black); color: white; }
@@ -197,8 +198,8 @@ figcaption { margin-top: 11px; color: var(--gray-dark); font-size: .72rem; font-
 }
 .step-info.active { opacity: 1; transform: none; }
 .step-info > p:first-child { font-size: .84rem; color: #bbb; }
-.step-info h2 { margin: 10px 0 24px; font-family: "EB Garamond", Georgia, serif; font-size: clamp(3.4rem, 5.5vw, 6rem); font-weight: 400; letter-spacing: -.055em; line-height: .9; }
-.step-description { max-width: 440px; font-size: 1rem; line-height: 1.8; color: #d8d8d8; letter-spacing: -.015em; }
+.step-info h2 { margin: 10px 0 24px; font-family: "EB Garamond", Georgia, serif; font-size: clamp(3.4rem, 5.5vw, 6rem); font-weight: 400; letter-spacing: -.03em; line-height: .9; }
+.step-description { max-width: 440px; font-size: 1rem; line-height: 1.8; color: #d8d8d8; letter-spacing: .005em; }
 .step-progress { position: absolute; left: 0; right: 0; bottom: 0; display: flex; gap: 7px; }
 .step-progress i { flex: 1; height: 3px; background: #393939; transition: background .3s; }
 .step-progress i.active { background: var(--accent); }
@@ -217,10 +218,10 @@ figcaption { margin-top: 11px; color: var(--gray-dark); font-size: .72rem; font-
 }
 .deliverables-lead h2 {
   max-width: 980px; font-size: clamp(3.8rem, 6.5vw, 7.4rem);
-  line-height: 1.02; letter-spacing: -.055em; font-weight: 400;
+  line-height: 1.02; letter-spacing: -.03em; font-weight: 400;
 }
 .deliverables-lead p {
-  color: var(--gray-dark); font-size: 1.08rem; line-height: 1.85; letter-spacing: -.02em;
+  color: var(--gray-dark); font-size: 1.08rem; line-height: 1.85; letter-spacing: .005em;
 }
 .deliverables-grid {
   display: grid; grid-template-columns: repeat(2, 1fr);
@@ -234,10 +235,10 @@ figcaption { margin-top: 11px; color: var(--gray-dark); font-size: .72rem; font-
 .deliverables-grid article > span {
   grid-row: 1 / 3; color: var(--accent); font-size: .78rem;
 }
-.deliverables-grid h3 { font-size: clamp(1.3rem, 1.8vw, 1.8rem); font-weight: 400; letter-spacing: -.03em; }
+.deliverables-grid h3 { font-size: clamp(1.3rem, 1.8vw, 1.8rem); font-weight: 400; letter-spacing: -.005em; }
 .deliverables-grid p {
   margin-top: 28px; max-width: 470px; color: var(--gray-dark);
-  font-size: .95rem; line-height: 1.85; letter-spacing: -.015em;
+  font-size: .95rem; line-height: 1.85; letter-spacing: .005em;
 }
 .application-intro { margin-bottom: 82px; }
 .application-form { max-width: 1040px; margin-left: auto; display: grid; gap: 34px; }
@@ -279,7 +280,7 @@ footer { min-height: 100svh; padding: 72px 3vw 34px; background: var(--accent); 
 .footer-top { padding-top: 14px; border-top: 1px solid white; display: flex; align-items: flex-start; justify-content: space-between; gap: 30px; }
 .footer-top p { font-size: .78rem; letter-spacing: .04em; }
 .footer-top img { width: clamp(220px, 24vw, 390px); }
-footer h2 { margin-top: 9vh; font-family: "EB Garamond", Georgia, serif; font-size: clamp(5rem, 10vw, 11rem); line-height: .84; letter-spacing: -.065em; font-weight: 400; }
+footer h2 { margin-top: 9vh; font-family: "EB Garamond", Georgia, serif; font-size: clamp(5rem, 10vw, 11rem); line-height: .84; letter-spacing: -.04em; font-weight: 400; }
 .footer-contact {
   margin-top: 9vh; padding-top: 18px; border-top: 1px solid rgba(255,255,255,.8);
   display: grid; grid-template-columns: 1.6fr 1fr .7fr; gap: 5vw;
