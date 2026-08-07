@@ -149,6 +149,14 @@ p, h1, h2, h3, a, button, label, figcaption, .section-label, .eyebrow {
 @media (min-width: 961px) and (max-width: 1440px) {
   .why-heading { grid-template-columns: 1fr; gap: 12px; }
   .why-kicker { padding-top: 0; }
+
+  /* Keep the content-led sections compact on laptop-height screens. */
+  .why, .intro, .deliverables, .collection, .archive { padding-top: 112px; padding-bottom: 124px; }
+  .why-heading { margin: 64px 0 60px; }
+  .intro-heading, .collection-intro, .archive-lead { margin: 68px 0 76px; }
+  .private-notes { margin-top: 82px; }
+  .deliverables-lead { margin: 68px 0 72px; }
+  .application-intro { margin-bottom: 64px; }
 }
 .why-visual { position: relative; }
 .why-visual figure { width: 78%; }
